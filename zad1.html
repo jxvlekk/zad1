@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadania JavaScript</title>
+</head>
+<body>
+
+<script>
+
+// ZADANIE 1
+// Suma trzech liczb
+
+var a = Number(prompt("Podaj pierwszą liczbę"));
+var b = Number(prompt("Podaj drugą liczbę"));
+var c = Number(prompt("Podaj trzecią liczbę"));
+
+var suma = a + b + c;
+
+document.write("Suma trzech liczb: " + suma + "<br><br>");
+
+
+// ZADANIE 2
+// Średnia trzech liczb
+
+var a = Number(prompt("Podaj pierwszą liczbę"));
+var b = Number(prompt("Podaj drugą liczbę"));
+var c = Number(prompt("Podaj trzecią liczbę"));
+
+var srednia = (a + b + c) / 3;
+
+document.write("Średnia trzech liczb: " + srednia + "<br><br>");
+
+
+// ZADANIE 3
+// Suma, różnica i iloczyn dwóch liczb
+
+var a = Number(prompt("Podaj pierwszą liczbę"));
+var b = Number(prompt("Podaj drugą liczbę"));
+
+document.write("Suma: " + (a + b) + "<br>");
+document.write("Różnica: " + (a - b) + "<br>");
+document.write("Iloczyn: " + (a * b) + "<br><br>");
+
+
+// ZADANIE 4
+// Pierwiastek z podanej liczby
+
+var a = Number(prompt("Podaj liczbę"));
+
+var wynik = Math.sqrt(a);
+
+document.write("Pierwiastek: " + wynik + "<br><br>");
+
+
+// ZADANIE 5
+// Pole kwadratu
+
+var a = Number(prompt("Podaj długość boku kwadratu"));
+
+var pole = a * a;
+
+document.write("Pole kwadratu: " + pole + "<br><br>");
+
+
+// ZADANIE 6
+// Pole prostopadłościanu (powierzchnia całkowita)
+
+var a = Number(prompt("Podaj długość"));
+var b = Number(prompt("Podaj szerokość"));
+var c = Number(prompt("Podaj wysokość"));
+
+var pole = 2 * (a * b + a * c + b * c);
+
+document.write("Pole prostopadłościanu: " + pole + "<br><br>");
+
+
+// ZADANIE 7
+// Pole i obwód koła
+
+var r = Number(prompt("Podaj promień koła"));
+
+var pole = Math.PI * r * r;
+var obwod = 2 * Math.PI * r;
+
+document.write("Pole koła: " + pole + "<br>");
+document.write("Obwód koła: " + obwod + "<br><br>");
+
+
+// ZADANIE 8
+// Koszt przejazdu z Gdańska do Szczecina
+// Trasa 360 km, spalanie 8 litrów na 100 km
+
+var cena = Number(prompt("Podaj cenę benzyny za litr"));
+
+var spalanie = 8;
+var trasa = 360;
+
+var litry = trasa * spalanie / 100;
+var koszt = litry * cena;
+
+document.write("Koszt przejazdu: " + koszt + " zł<br><br>");
+
+
+// ZADANIE 9
+// Koszt przejazdu dla podanej trasy i spalania
+
+var cena = Number(prompt("Podaj cenę benzyny za litr"));
+var trasa = Number(prompt("Podaj długość trasy w km"));
+var spalanie = Number(prompt("Podaj spalanie na 100 km"));
+
+var litry = trasa * spalanie / 100;
+var koszt = litry * cena;
+
+document.write("Koszt przejazdu: " + koszt + " zł<br><br>");
+
+
+// ZADANIE 10
+// Zysk z lokaty 8% rocznie z podatkiem Belki 19%
+
+var kwota = Number(prompt("Podaj kwotę lokaty"));
+
+var oprocentowanie = 0.08;
+var podatek = 0.19;
+
+var zysk = kwota * oprocentowanie;
+var podatekBelki = zysk * podatek;
+var zyskNetto = zysk - podatekBelki;
+var razem = kwota + zyskNetto;
+
+document.write("Zysk przed podatkiem: " + zysk + " zł<br>");
+document.write("Podatek Belki: " + podatekBelki + " zł<br>");
+document.write("Zysk po podatku: " + zyskNetto + " zł<br>");
+document.write("Kwota końcowa: " + razem + " zł");
+
+</script>
+
+</body>
+</html>
